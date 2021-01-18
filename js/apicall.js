@@ -10,17 +10,7 @@ const getPokemon = async (which) => {
     };
 };
 
-// const getAbilities = async (which) => {
-//     try{
-//         const ability = await fetch(`https://pokeapi.co/api/v2/ability/${which}/`)
-//             .then(response => response.json());
-//         return ability.effect_entries.filter(item => item.language.name == 'en');
-//     }
-//     catch(error){
-//         console.log(error);
-//     };
-// };
-
+// Get details
 const getDetails = async (detail, which) => {
     const url = `https://pokeapi.co/api/v2/${detail}/${which}/`;
     try{
